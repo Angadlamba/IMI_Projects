@@ -1,0 +1,40 @@
+Time Results of Decision Tree Model:
+
+1. decision_tree_k is decision tree with max_depth = k
+2. time is in seconds
+3. mean and std(standard deviation) is in seconds.
+4. cross_validation with cv=10
+
+Results:
+
+decision_tree_10:1.14541602135
+cross_validation_10:9.07855391502
+mean: 0.780 (std: 0.025)
+decision_tree_20:1.00925302505
+cross_validation_20:9.41737914085
+mean: 0.842 (std: 0.020)
+decision_tree_30:0.996253967285
+cross_validation_30:9.6938560009
+mean: 0.838 (std: 0.019)
+decision_tree_40:0.992762088776
+cross_validation_40:9.65366196632
+mean: 0.843 (std: 0.024)
+decision_tree_50:0.981489896774
+cross_validation_50:9.62936091423
+mean: 0.847 (std: 0.020)
+decision_tree_60:0.991312980652
+cross_validation_60:9.65505886078
+mean: 0.840 (std: 0.022)
+decision_tree_70:1.00959300995
+cross_validation_70:9.76127505302
+mean: 0.840 (std: 0.024)
+decision_tree_80:1.02235293388
+cross_validation_80:9.66369700432
+mean: 0.845 (std: 0.018)
+decision_tree_90:1.01626992226
+cross_validation_90:9.72791314125
+mean: 0.851 (std: 0.021)
+decision_tree_100:1.00106501579
+cross_validation_100:9.74532103539
+mean: 0.840 (std: 0.013)
+Baymax:DecisionTree Angadlamba21$ 

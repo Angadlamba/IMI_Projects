@@ -1,0 +1,29 @@
+I'm using grid search in sklearn to find best parameters of decision tree,
+
+for example:
+param_grid = {"criterion": ["gini", "entropy"],
+              "min_samples_split": [2, 10, 20],
+              "max_depth": [None, 10, 20, 30, 50, 100],
+              "min_samples_leaf": [1, 5, 10],
+              "max_leaf_nodes": [None, 5, 10, 20],
+              }
+
+1st Problem: 	To find the basic range of values for these parameters, so that gridsearch can loop through them to find the best parameter.
+            	for eg: like should I use max_depth range to be like [10,20,40,60] etc or like [5,10,15,20,30] (similarly for other parameters)
+
+2nd Problem: 	It takes awhile to run gridsearch.
+            	But once the best parameters are determined. I only have to run the decision tree model once with those best parameters which will take less that 1min or sec(what is
+the unit for time function).
+
+3rd Problem: 	When trying to visualise the decision tree. I'm using export_graphviz library of sklearn. and it generates .dot file, which needs to be converted into pdf or png or
+svg format to see a decision tree. Now, once converted to .dot format(for which code is run perfectly), the further conversion requires graphviz(a tool for graphs) but it is not supported for El Capitan.
+
+            Basically we have to run following command on commandline:
+
+            $dot -Tpng dotfile -o pngfile   (to convert to png)
+
+
+Since I was not able to install graphviz, I used online converter for now to convert it into pdf. It resulted in file attached below.
+Then I copy the text of pdf in another website(http://www.webgraphviz.com ) which converts it into svg format and displays the decision tree.
+
+To summerize, I want to know starting basic values of those paramters and to make the process of making visuals of decision tree easier.
